@@ -1,0 +1,148 @@
+body {
+	background-color: #1c1b21;
+	font-family: "Trebuchet MS";
+	height: 100%;
+}
+
+
+#home {
+	height: 1000px;
+}
+
+
+.profile-pic {
+	width: 50%;
+	min-width: 40%;
+	max-width: 60%;
+	height: 1000px;
+	min-height: 800px;
+	margin-bottom: 20px;
+	margin-left: -20px;
+	float: left;
+	border-radius: 10px;
+	border: 2px solid #0c0c0d;
+	position: relative;
+	right: 10px;
+}
+
+.introduction {
+	background-color: black;
+	border-radius: 10px;
+	border: 1px solid black;
+	height: 1000px;
+	float: right;
+	width: 48%;
+	margin-bottom: 20px;
+	opacity: 80%
+	position: relative;
+	margin-right: 13px;
+}
+
+.introduction p {
+	padding: 20px;
+	text-align: center;
+	color: white;
+}
+
+header {
+	background-image: url("./Photos/black_minimal_header.jpeg");
+	border-radius: 10px;
+	margin-top: -20px;
+	padding-top: 180px;
+	width: 100%
+	position: fixed;
+}
+
+footer {
+	background-image: url("./Photos/black_minimal_header.jpeg");
+	border-radius: 10px;
+	text-align: center;
+	height: 80px;
+	width: 100%;
+	position: relative;
+	top: 30px;
+}
+
+.contactinfo {
+	float: right;
+	margin-top: -100px;
+	text-align: center;
+}
+
+.contactinfo img {
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+}
+
+.title {
+	text-align: center;
+	color: white;
+	font-size: 50px;
+	font-family: "Andale Mono";
+	letter-spacing: 2px;
+	padding-top: 10px;
+	margin-left: 60px;
+}
+
+.navigation {
+	position: relative;
+	width: 100%;
+}
+
+.navigation a {
+	text-decoration: none;
+	color: white;
+}
+
+.navigation a:hover {
+	font-weight: 1000;
+}
+
+.navigation li {
+	display: inline-block;
+	margin: 20px 110px;
+}
+
+.capitalize {
+	text-transform: uppercase;
+}
+
+h3 {
+	font-family: "Andale Mono";
+	color: white;
+	text-align: center;
+	font-size: 45px;
+	margin-top: 80px;
+}
+
+#aboutme, #myhobbies, #myresume {
+	width: 94%;
+	background-color: black;
+	opacity: 80%;
+	height: 200px;
+	color: white;
+	padding: 20px;
+	margin: 20px;
+	border-radius: 10px;
+}
+
+#linkedin {
+	width: 45px;
+}
+
+#aboutme, #myhobbies, #myresume {
+
+}
+
+#aboutme {
+	background-image: url("./Photos/green_minimal_aboutme.jpg");
+}
+
+#myhobbies {
+	background-image: url("./Photos/blue_minimal_myhobbies.jpg");
+}
+
+#myresume {
+	background-image: url("./Photos/orange_minimal_myresume.jpg");
+}
