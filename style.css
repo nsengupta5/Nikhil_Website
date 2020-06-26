@@ -1,13 +1,37 @@
+html {
+	scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+	width: 5px;
+}
+
+::-webkit-scrollbar-track {
+	background-color:transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: rgb(8, 22, 33);
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: rgb(5, 17, 28);
+}
+
 body {
 	background-color: #1c1b21;
 	font-family: "Trebuchet MS";
 	height: 100%;
-	width: 1325px;
+	width: 100%;
+	margin: 0 auto 0 auto;
 }
 
 
 #home {
+	width: 1325px;
+	max-width: 1325px;
 	height: 1000px;
+	margin: 0 auto 0 auto;
 }
 
 .title {
@@ -22,7 +46,7 @@ body {
 	height: 1000px;
 	min-height: 800px;
 	margin-bottom: 20px;
-	margin-left: -20px;
+	margin-left: -40px;
 	float: left;
 	border-radius: 10px;
 	border: 2px solid #0c0c0d;
@@ -36,11 +60,11 @@ body {
 	border: 1px solid black;
 	height: 1000px;
 	float: right;
-	width: 48%;
+	width: 52%;
 	margin-bottom: 20px;
 	opacity: 80%
 	position: relative;
-	margin-right: -5px;
+	margin-right: -15px;
 }
 
 .introduction p {
@@ -52,10 +76,13 @@ body {
 header {
 	background-image: url("./Photos/black_minimal_header.jpeg");
 	border-radius: 10px;
-	margin-top: -20px;
+	margin: 0;
 	padding-top: 180px;
-	width: 100%
-	position: fixed;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-position: 0px -300px;
 }
 
 footer {
@@ -64,8 +91,10 @@ footer {
 	text-align: center;
 	height: 80px;
 	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
 	position: relative;
-	top: 30px;
+	bottom: 0
 }
 
 .contactinfo {
@@ -79,6 +108,11 @@ footer {
 	width: 25px;
 	height: 25px;
 	margin-top: 15px;
+}
+
+.contactinfo img:hover {
+	height: 30px;
+	width: 30px;
 }
 
 .title {
@@ -141,8 +175,14 @@ h3 {
 	display: none;
 }
 
+.pagesContainer {
+	margin: 0 auto 0 auto;
+	width: 1325px;
+}
+
 #aboutme, #myresume, #myhobbies {
 	margin-bottom: 20px;
+	margin-left: -25px;
 }
 
 button {
@@ -150,23 +190,30 @@ button {
 	width: 100%;
 	opacity: 80%;
 	color: white;
-	padding: 5px 500px;
-	border-radius: 10px;
-	font-size: 25px;
+	padding: 5px 550px;
 	margin-left: 10px;
 	font-family: "Trebuchet MS";
 }
 
+button:hover h3 {
+	font-size: 3rem;
+}
+
+
 #aboutme button{
 	background-image: url("./Photos/green_minimal_aboutme.jpg");
+	background-size: cover;
 }
 
 #myhobbies button {
-	background-image: url("./Photos/blue_minimal_myhobbies.jpg");	
+	background-image: url("./Photos/blue_minimal_myhobbies.jpeg");
+	background-size: cover;	
+	background-position: -200px 0px;
 }
 
 #myresume button {
-	background-image: url("./Photos/orange_minimal_myresume.jpg");
+	background-image: url("./Photos/orange_minimal_myresume.jpeg");
+	background-size: cover;
 }
 
 #mePanel {
@@ -174,9 +221,9 @@ button {
 }
 
 #hobbiesPanel {
-	box-shadow: 5px 10px rgb(79, 16, 12);
+	box-shadow: 5px 10px rgb(39, 39, 56);
 }
 
 #resumePanel {
-	box-shadow: 5px 10px rgb(163, 79, 0);
+	box-shadow: 5px 10px rgb(199, 152, 113);
 }
