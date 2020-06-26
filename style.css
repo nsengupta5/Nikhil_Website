@@ -2,11 +2,16 @@ body {
 	background-color: #1c1b21;
 	font-family: "Trebuchet MS";
 	height: 100%;
+	width: 1325px;
 }
 
 
 #home {
 	height: 1000px;
+}
+
+.title {
+	padding-left: 50px;
 }
 
 
@@ -35,7 +40,7 @@ body {
 	margin-bottom: 20px;
 	opacity: 80%
 	position: relative;
-	margin-right: 13px;
+	margin-right: -5px;
 }
 
 .introduction p {
@@ -73,6 +78,7 @@ footer {
 	display: inline-block;
 	width: 25px;
 	height: 25px;
+	margin-top: 15px;
 }
 
 .title {
@@ -108,6 +114,7 @@ footer {
 	text-transform: uppercase;
 }
 
+
 h3 {
 	font-family: "Andale Mono";
 	color: white;
@@ -116,33 +123,60 @@ h3 {
 	margin-top: 80px;
 }
 
-#aboutme, #myhobbies, #myresume {
-	width: 94%;
-	background-color: black;
-	opacity: 80%;
-	height: 200px;
-	color: white;
-	padding: 20px;
-	margin: 20px;
-	border-radius: 10px;
-}
 
 #linkedin {
 	width: 45px;
 }
 
-#aboutme, #myhobbies, #myresume {
 
+.panel {
+	width: 100%;
+	height: 200px;
+	background-color: black;
+	color: white;
+	text-align: center;
+	border-radius: 10px;
+	margin-left: 10px;
+	padding: 10px 0px;
+	display: none;
 }
 
-#aboutme {
+#aboutme, #myresume, #myhobbies {
+	margin-bottom: 20px;
+}
+
+button {
+	border: none;
+	width: 100%;
+	opacity: 80%;
+	color: white;
+	padding: 5px 500px;
+	border-radius: 10px;
+	font-size: 25px;
+	margin-left: 10px;
+	font-family: "Trebuchet MS";
+}
+
+#aboutme button{
 	background-image: url("./Photos/green_minimal_aboutme.jpg");
 }
 
-#myhobbies {
-	background-image: url("./Photos/blue_minimal_myhobbies.jpg");
+#myhobbies button {
+	background-image: url("./Photos/blue_minimal_myhobbies.jpg");	
 }
 
-#myresume {
+#myresume button {
 	background-image: url("./Photos/orange_minimal_myresume.jpg");
+}
+
+#mePanel {
+	box-shadow: 5px 10px rgb(20, 41, 28);
+}
+
+#hobbiesPanel {
+	box-shadow: 5px 10px rgb(79, 16, 12);
+}
+
+#resumePanel {
+	box-shadow: 5px 10px rgb(163, 79, 0);
 }
