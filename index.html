@@ -8,9 +8,14 @@
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-NTMFVFV');</script>
         <!-- End Google Tag Manager -->
+        <meta name="description" content="Hey, I'm Nikhil Sengupta. Learn more about me here.">
 		<meta name="viewport" content="width=device-width, initial-scale:1.0, maximum-scale:1.0, minimum-scale:1.0">
 		<link rel="stylesheet" type="text/css" href="./style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" href="./style.css" rel="stylesheet">
 		<link rel="icon" href="./Photos/tab_icon.png">
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+		<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 		<script src="./jquery-3.5.1.min.js"></script>
 		<script type="text/javascript" src="./main.js"></script>
 		<title>Nikhil Sengupta</title>
@@ -39,20 +44,22 @@
 			<h3 class="title capitalize">Nikhil Sengupta</h3>
 			<nav class="navigation capitalize">
 				<ul>
-					<li><a href=#home>Home</a></li>
-					<li><a href=#aboutme>About Me</a></li>
-					<li><a href=#myhobbies>My Hobbies</a></li>
-					<li><a href=#myresume>My Resume</a></li>
+					<li id="homenav"><a href=#home>Home</a></li>
+					<li id="aboutmenav"><a href=#aboutme>About Me</a></li>
+					<li id="hobbiesnav"><a href=#myhobbies>My Hobbies</a></li>
+					<li id="resumenav"><a href=#myresume>My Resume</a></li>
+					<li id="byteclubnav"><a href=#byteclub>Byte Club</a></li>
 				</ul>
 			</nav>
 		</header>
 		<main>
 			<section id="home">
 				<figure>
-					<img class="profile-pic" src="./Photos/thisisme.jpg">
+					<img class="profile-pic" src="./Photos/thisisme.JPG">
 				</figure>
 				<section class="introduction">
-					<p>Yes it does work</p>
+					<h3><em>Hi, I'm Nikhil</em></h3>
+					<p>I am a second-year computer science student from the Univeristy of St Andrews on track for a Master's in Computer Science.</p>
 				</section>
 			</section>
 			<div class="pagesContainer">
@@ -66,17 +73,38 @@
 					<button id="myHobbiesButton"><h3>My Hobbies</h3></button>
 					<div class="panel" id="hobbiesPanel">
 						<p>These are my hobbies</p>
-					<div>
+					</div>
 				</section>
 				<section id="myresume">
 					<button id="myResumeButton"><h3>My Resume</h3></button>
 					<div class="panel" id="resumePanel">
-						<p>Here is my resume</p>
+
+					</div>
+				</section>
+				<section id="byteclub">
+					<button id="byteClubButton"><h3>Byte Club</h3></button>
+					<div class="panel" id="bytePanel">
+						<div id="blogPreviewSlides">
+							<a href="./what_is_the_singularity.html">
+								<section class="blogPost" id="singularityPost">
+									<img id="singularityImg" src="./Photos/singularity.jpg">
+									<label for="singularityImg"><h5>What is Roko's Basilisk?</h5></label>
+									<p>Posted on June 30, 2020</p>
+								</section>
+							</a>
+							<section class="blogPost" id="bitcoinPost">
+								<img id="bitcoinImg" src="./Photos/bitcoin.jpg">
+								<label for="bitcoinImg"><h5>The History of Cryptocurrency</h5></label>
+								<p>Posted on July 1, 2020</p>
+							</section>
+							<section class="blogPost">
+							</section>			
+						</div>
 					</div>
 				</section>
 			</div>
 		</main>
+		<footer>
+		</footer>
 	</body>
-	<footer>
-	</footer>
 </html>
